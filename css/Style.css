@@ -73,6 +73,13 @@
    gap: 10px;
    margin-bottom: 20px;
    overflow-x: auto;
+
+ .sub-banner-container {
+   display: flex;
+   justify-content: space-around;
+ }
+  
+ 
  }
 
  .sub-banner img {
@@ -152,6 +159,32 @@
    background-image: url('./Assets/Logo.png');
    letter-spacing: 1px;
  }
+
+ .featured-banner {
+  position: relative;   /* IMPORTANT */
+  width: 100%;
+  max-width: 100%;
+}
+
+.featured-banner img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;  /* optional */
+}
+
+.banner-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  z-index: 2;
+}
 
 
  @media (max-width: 768px) {
